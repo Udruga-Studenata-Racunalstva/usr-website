@@ -85,7 +85,7 @@ my-app
 * [Sass official website](https://sass-lang.com/)
 * [Documentation](https://sass-lang.com/guide)
 * Install with `npm i -g sass` or check [other install options](https://sass-lang.com/install)
-* [**dart-sass**](https://sass-lang.com/dart-sass) (or just **sass**) > **node-sass**
+* [**dart-sass**](https://sass-lang.com/dart-sass) (or just **sass**) version is prefered over the "deprecated" **node-sass**
 
 ### HTML
 * There are almost 100 different HTML tags, don't just use the generic `<div>`.  Write [semantic HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)!
@@ -105,7 +105,7 @@ my-app
 ### ReactJS
 * Components were named after [VSC UI guidelines](https://code.visualstudio.com/docs/getstarted/userinterface):
 <a href="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png"><img src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" alt="components-names"></a>
-* [Component's file name should be in PascalCase](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb#fbe1)
+* [Component's file name should be in PascalCase](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb#fbe1) and end with **.jsx**
 * [All components should be inside components directory](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb#9c70)
 * [Components having own folder should have a component file with the same name](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb#1a4e)
 * [Components which are used on multiple places on the website are kept in shared sub-directory](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb#e761)
@@ -113,10 +113,13 @@ my-app
 * TODO: Code conventions and style guidelines
 
 ### SCSS
-* All Sass logic is contained in **app.scss** with ~~@import~~ **@use** rule to load sass modules.
+* [BEM](http://getbem.com/introduction/) for naming classes
+* Mobile-first
+* No more than 2-3 levels of nesting in styles (allowed 4 or more in special cases like navbar etc.)
+* All sass styles are gathered in **app.scss** with ~~@import~~ **@use** rule to load sass modules.
 * [Partials start with an underscore, such as **_partial.scss**](https://sass-lang.com/documentation/at-rules/use#partials)
-* Each component folder has **_index.scss** which is used for [cleaner module imports](https://sass-lang.com/documentation/at-rules/use#index-files)
-* Global or shared styles (eg. CSS resets), variables, mixins, and functions go into the **components/styles** folder. Rest of the CSS logic lives in component's folders
+* Each component folder has its styles stored in **_index.scss** which is used for [cleaner module imports](https://sass-lang.com/documentation/at-rules/use#index-files). We don't use **_index.scss** just to @forward **_component.scss** like we exported **component.jsx** in **index.js**.
+* Theme stylings, mixins and other shared styles go into the **components/styles** folder, they are then @forwared in **components/styles/index.scss**
 * [Private members start with '-' rather than '_'](https://sass-lang.com/documentation/at-rules/use#partials)
 
 ### git
@@ -126,6 +129,7 @@ my-app
 - Limit the first line to 72 characters or less
 - Develop on **develop** branch, but in the future [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) will become the standard
 - Consider starting the commit message with an applicable emoji:
+    - 🎉 `:tada:` when adding new features
     - 👷 `:construction_worker:` when restructuring or formatting the code
     - 🎨 `:art:` when working with styles
     - 🐎 `:racehorse:` when improving performance

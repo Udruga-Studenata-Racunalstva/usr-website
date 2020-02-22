@@ -29,6 +29,9 @@ yarn test
 
 * Website: www.usr.st
 * Github: [@Udruga Studenata Računarstva](https://github.com/Udruga-Studenata-Racunalstva)
+* Facebook: [Udruga Studenata Računarstva](#TODO)
+* Instagram: [USR](#TODO)
+* LinkedIn: [Udruga Studenata Računarstva](#TODO)
 
 ## 🤝 Contributing
 
