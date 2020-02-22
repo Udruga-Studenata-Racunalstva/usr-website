@@ -1,25 +1,23 @@
 // Helpers
-@import 'styles/helpers/parameters';
-@import 'styles/helpers/extendables';
-@import 'styles/helpers/functions';
-@import 'styles/helpers/mixins';
+@use 'styles/helpers/parameters';
+@use 'styles/helpers/extendables';
+@use 'styles/helpers/functions';
+@use 'styles/helpers/mixins';
 
 // Resets
-@import 'styles/reset';
+@use 'styles/reset';
 
 // Shared
-@import 'shared/ActivityBar';
-@import 'shared/SideBar';
-@import 'shared/StatusBar';
-@import 'shared/Panel';
-@import 'shared/EditorGroups';
+@use 'shared/ActivityBar';
+@use 'shared/SideBar';
+@use 'shared/StatusBar';
+@use 'shared/Panel';
+@use 'shared/EditorGroups';
 
 // Pages
-@import 'pages/WelcomeScreen';
-@import 'pages/Home';
-@import 'pages/Events';
-@import 'pages/Projects';
-@import 'pages/News';
-@import 'pages/Page404';
-
-// TODO: Switch to dart-sass
+@use 'pages/WelcomeScreen';
+@use 'pages/Home';
+@use 'pages/Events';
+@use 'pages/Projects';
+@use 'pages/News';
+@use 'pages/Page404';
