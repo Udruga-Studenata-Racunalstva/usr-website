@@ -22,7 +22,9 @@
 	.flex-#{$direction} {
 		display: flex;
 		flex-direction: $direction;
-		height: 100%;
+		@if $direction == column {
+			height: 100%;
+		}
 		@if $direction == row {
 			width: 100%;
 		}

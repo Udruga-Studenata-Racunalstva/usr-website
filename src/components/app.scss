@@ -1,3 +1,7 @@
+// Helpers and theme styles
+@use 'styles/theme';
+@use 'styles/mixins';
+
 // Resets
 @use 'reset';
 
@@ -16,9 +20,18 @@
 @use 'pages/News';
 @use 'pages/Page404';
 
+
 #root {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	font-family: theme.$font;
 }
 
+.flex-row--content {
+	height: 100%;
+}
+
+.flex-row--footer {
+	height: StatusBar.$footer-height;
+}

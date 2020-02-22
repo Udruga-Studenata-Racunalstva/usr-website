@@ -8,18 +8,22 @@ import EditorArea from './EditorArea'
 
 function App () {
   return (
-    <div>
-			{/* Aside */}
-      <ActivityBar />
-      <SideBar />
+		<div className="flex-column">
+			<div class="flex-row flex-row--content">
+				{/* Aside */}
+				<ActivityBar />
+				<SideBar />
 
-			{/* Main */}
-			<EditorArea />
-      <Panel />
+				{/* Main */}
+				<EditorArea />
+				<Panel />
+			</div>
 
-			{/* Footer */}
-      <StatusBar />
-    </div>
+			<div className="flex-row flex-row--footer">
+				{/* Footer */}
+				<StatusBar />
+			</div>
+		</div>
   )
 }
 
