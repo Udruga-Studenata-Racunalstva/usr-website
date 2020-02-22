@@ -1,11 +1,5 @@
-// Helpers
-@use 'styles/helpers/parameters';
-@use 'styles/helpers/extendables';
-@use 'styles/helpers/functions';
-@use 'styles/helpers/mixins';
-
 // Resets
-@use 'styles/reset';
+@use 'reset';
 
 // Shared
 @use 'shared/ActivityBar';
@@ -21,3 +15,10 @@
 @use 'pages/Projects';
 @use 'pages/News';
 @use 'pages/Page404';
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
