@@ -1,0 +1,35 @@
+@use '../../styles' as *;
+$footer-height: 25px;
+
+.flex-row--footer {
+	height: $footer-height;
+}
+
+.footer {
+	width: 100%;
+	background: $theme-bg-color-footer-1;
+	justify-content: space-between;
+	color: $theme-font-color;
+
+	.flex-column {
+		justify-content: center;
+	}
+
+	.footer-span {
+		line-height: $footer-height - 1;
+		font-size: 0.8em;
+		padding: 0 0.6em;
+
+		&:not(.footer-span--small):hover {
+			background-color: $theme-bg-color-footer-2;
+		}
+
+		.footer-small {
+			font-size: 0.8em;
+		}
+	}
+
+	.footer-fa {
+		margin: 0 0.7em;
+	}
+}

@@ -1,3 +1,33 @@
-.activity_bar {
-	list-style: none;
+@use '../../styles' as *;
+
+.aside {
+	width: 50px;
+	background-color: $theme-bg-color-3;
+
+	.aside-item--settings {
+		margin-top: auto;
+
+	}
+
+	.aside-button {
+		width: 100%;
+		margin: 0.1em 0;
+		padding: 0.7em 0;
+
+		&:not(.aside-button--settings):focus{
+			border-left: 1px solid $theme-active-link-color;
+		}
+
+		&:hover, &:focus {
+			.aside-fa {
+				color: $theme-active-link-color;
+			}
+		}
+
+		.aside-fa {
+			color: $theme-link-color;
+			font-size: 1.8em;
+		}
+	}
 }
+
