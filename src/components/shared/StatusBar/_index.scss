@@ -1,5 +1,4 @@
 @use '../../styles' as *;
-$footer-height: 25px;
 
 .footer {
 	width: 100%;
@@ -12,7 +11,7 @@ $footer-height: 25px;
 	}
 
 	.footer-span {
-		line-height: $footer-height - 1;
+		line-height: $theme-footer-height - 1;
 		font-size: 0.8em;
 		padding: 0 0.6em;
 

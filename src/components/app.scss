@@ -1,6 +1,6 @@
 // Helpers and theme styles
-@use 'styles/theme';
-@use 'styles/mixins';
+@use 'styles' as *;
+
 
 // Resets
 @use 'reset';
@@ -13,6 +13,7 @@
 @use 'shared/EditorGroups';
 
 // Pages
+@use 'pages';
 @use 'pages/WelcomeScreen';
 @use 'pages/Home';
 @use 'pages/Events';
@@ -25,13 +26,17 @@
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	font-family: theme.$font;
+	font-family: $theme-font;
 }
 
-.flex-row--content {
+.flex-row--body {
 	height: 100%;
 }
 
 .flex-row--footer {
-	height: StatusBar.$footer-height;
+	height: $theme-footer-height;
+}
+
+.flex-column--content {
+	width: 100%;
 }

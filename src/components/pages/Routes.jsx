@@ -12,10 +12,10 @@ function Routes () {
 	return (
 		<Switch>
 			<Route exact path="/" component={WelcomeScreen} />
-			<Route exact path="/naslovnica" component={Home} />
-			<Route exact path="/događaji" component={Events} />
-			<Route exact path="/projekti" component={Projects} />
-			<Route exact path="/novosti" component={News} />
+			<Route exact path="/home" component={Home} />
+			<Route exact path="/events" component={Events} />
+			<Route exact path="/projects" component={Projects} />
+			<Route exact path="/news" component={News} />
 			<Route component={Page404} />
 		</Switch>
 	);

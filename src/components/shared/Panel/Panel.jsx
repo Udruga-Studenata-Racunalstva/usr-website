@@ -2,7 +2,7 @@ import React from 'react';
 
 const Panel = () => {
 	return (
-		<div>
+		<div id="panel" className="panel">
 			Panel
 		</div>
 	 );
