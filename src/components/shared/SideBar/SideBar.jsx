@@ -1,20 +1,44 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown as faCaretDown, faAngleRight as faCaretRight} from '@fortawesome/free-solid-svg-icons'
+// import { faReact} from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = () => {
 	return (
-		<div className="side_bar">
-				<h3 className="side_bar-title">EXPLORER</h3>
-				<h3 className="side_bar-subtitle">USR-WEBSITE</h3>
+		<nav id="sidenav" className="sidenav flex-column">
+			<h2 className="sidenav-title">EXPLORER</h2>
 
-				<nav className="side_bar-nav">
-					<Link to="/naslovnica" className="side_bar-link">Naslovnica.md</Link>
-					<Link to="/novosti" className="side_bar-link">Novosti.md</Link>
-					<Link to="/projekti" className="side_bar-link">Projekti.md</Link>
-					<Link to="/događaji" className="side_bar-link">Događaji.md</Link>
-				</nav>
-		</div>
+			<h2 className="sidenav-title sidenav-title--main">USR-WEBSITE</h2>
+
+			<ul className="sidenav-list">
+				<li className="sidenav-item">
+					<button className="sidenav-button">
+						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
+						<span>Home</span>
+					</button>
+				</li>
+				<li className="sidenav-item">
+					<button className="sidenav-button">
+						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
+						<span>News</span>
+					</button>
+				</li>
+				<li className="sidenav-item">
+					<button className="sidenav-button">
+						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
+						<span>Projects</span>
+					</button>
+				</li>
+				<li className="sidenav-item">
+					<button className="sidenav-button">
+						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
+						<span>Events</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
 	 );
 }
 

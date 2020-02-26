@@ -1,0 +1,42 @@
+@use '../../styles' as *;
+
+.nav {
+	background-color: $theme-bg-color-2;
+	// border-bottom: 2px solid $theme-bg-color-1;
+
+	.nav-item {
+		padding: 0.5em;
+		background-color: $theme-bg-color-3;
+		border-right: 1px solid $theme-bg-color-2;
+
+		&:hover {
+			.nav-button {
+				visibility: visible;
+			}
+		}
+
+		&:active {
+			background-color: $theme-bg-color-1;
+
+			.nav-link {
+				color: $theme-active-link-color;
+			}
+		}
+	}
+
+	.nav-fa--react {
+		margin-right: 0.4em;
+		color: aqua;
+	}
+
+	.nav-link {
+		color: $theme-link-color;
+		text-decoration: none;
+	}
+
+	.nav-button {
+		visibility: hidden;
+		color: $theme-active-link-color;
+	}
+
+}
