@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1 align="center">Welcome to USR-website 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Udruga-Studenata-Racunalstva/usr-website/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-In the project directory, you can run:
+> Udruga Studenata Računalstva (CS Student Association) main website
 
-### `yarn start`
+## Avaliable scripts
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+yarn install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```sh
+yarn start
+```
 
-### `yarn test`
+```sh
+yarn test
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Author
 
-### `yarn build`
+👤 **USR**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Website: www.usr.st
+* Github: [@Udruga Studenata Računarstva](https://github.com/Udruga-Studenata-Racunalstva)
+* Facebook: [Udruga Studenata Računarstva](#TODO)
+* Instagram: [USR](#TODO)
+* LinkedIn: [Udruga Studenata Računarstva](#TODO)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 🤝 Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/udruga-studenata-racunalstva/usr-website/issues). You can also take a look at the [contributing guide](https://github.com/udruga-studenata-racunalstva/usr-website/blob/master/CONTRIBUTING.md).
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Copyright © 2020 [USR](https://github.com/admin-usr).<br />
+This project is [MIT](https://github.com/Udruga-Studenata-Racunalstva/usr-website/blob/master/LICENSE) licensed. It means you can do whatever you'd like with this code, but if stuff gets nasty, don't sue us.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

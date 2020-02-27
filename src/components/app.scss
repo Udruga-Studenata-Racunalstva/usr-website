@@ -1,0 +1,40 @@
+// Helpers and theme styles
+@use 'styles' as *;
+
+// Resets
+@use 'reset';
+
+// Shared
+@use 'shared/ActivityBar';
+@use 'shared/SideBar';
+@use 'shared/StatusBar';
+@use 'shared/Panel';
+@use 'shared/EditorGroups';
+
+// Pages
+@use 'pages';
+@use 'pages/WelcomeScreen';
+@use 'pages/Home';
+@use 'pages/Events';
+@use 'pages/Projects';
+@use 'pages/News';
+@use 'pages/Page404';
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: $theme-font;
+}
+
+.flex-row--body {
+	height: 100%;
+}
+
+.flex-row--footer {
+	height: $theme-footer-height;
+}
+
+.flex-column--content {
+	width: 100%;
+}

@@ -1,0 +1,54 @@
+@use '../../styles' as *;
+
+.aside {
+	width: 50px;
+	background-color: $theme-bg-color-3;
+	flex-shrink: 0;
+
+	.aside-item--settings {
+		margin-top: auto;
+	}
+
+	.aside-button {
+		width: 100%;
+		margin: 0.1em 0;
+		padding: 0.7em 0;
+
+		&:not(.aside-button--settings):focus{
+			border-left: 1px solid $theme-active-link-color;
+		}
+
+		&:hover, &:focus {
+			.aside-fa {
+				color: $theme-active-link-color;
+			}
+		}
+
+		&:hover {
+			.aside-tooltip {
+				visibility: visible;
+				transition-delay: 1s;
+				opacity: 1;
+			}
+		}
+
+		.aside-fa {
+			color: $theme-link-color;
+			font-size: 1.8em;
+		}
+	}
+
+	.aside-tooltip {
+		position: absolute;
+		background-color: white;
+		color: #555;
+		border-radius: 1px;
+		font-size: 12px;
+		padding: 2px 4px;
+		margin: 0 7px;
+		visibility: hidden;
+		z-index: 1;
+		opacity: 0;
+	}
+}
+

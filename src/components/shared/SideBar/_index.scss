@@ -1,0 +1,58 @@
+@use '../../styles' as *;
+
+.sidenav {
+	width: 200px;
+	min-width: 160px;
+	max-width: 300px;
+	background-color: $theme-bg-color-2;
+	resize: horizontal;
+	overflow: hidden;
+
+	// flex-shrink: 0;
+
+	// &:before {
+	// 	content: " ";
+	// 		 background-color: #356;
+	// 		 width: 4px;
+	// 		 height: 100%;
+	// 		 position: absolute;
+	// 		 left: 0;
+	// 		 cursor: w-resize;
+	//  }
+
+	.sidenav-title {
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: $theme-sidenav-font-color;
+
+		&:not(.sidenav-title--main) {
+			margin: 1em;
+		}
+	}
+
+	.sidenav-title--main {
+		font-weight: $theme-bold;
+		background-color: $theme-bg-color-4;
+		padding: 0.5em 1em;
+	}
+
+	.sidenav-list {
+		margin: 0 1em;
+	}
+
+	.sidenav-item {
+		margin: 0.5em 0;
+	}
+
+	.sidenav-button {
+		color: white;
+		text-decoration: none;
+		color: $theme-sidenav-font-color;
+	}
+
+	.sidenav-fa {
+		color: white;
+		margin-right: 0.5em;
+	}
+}
+

@@ -1,0 +1,7 @@
+@use '../styles' as *;
+
+main {
+	height: 100%;
+	background-color:$theme-bg-color-1;
+	overflow-y: scroll;
+}
