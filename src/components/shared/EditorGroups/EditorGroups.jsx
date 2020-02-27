@@ -7,9 +7,9 @@ import { faReact} from '@fortawesome/free-brands-svg-icons'
 
 const EditorGroups = () => {
 
-	const renderItem = (item) => {
+	const renderItem = (item, i) => {
 		return (
-			<li className="nav-item">
+			<li key={i} className="nav-item">
 				<FontAwesomeIcon className="nav-fa nav-fa--react" icon={item.icon} />
 				<Link to={`/${item.name.toLowerCase()}`} className="nav-link">{item.name}.jsx</Link>
 				<button className="nav-button">

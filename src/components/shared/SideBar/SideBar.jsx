@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown as faCaretDown, faAngleRight as faCaretRight} from '@fortawesome/free-solid-svg-icons'
+import { /*faAngleDown as faCaretDown, */ faAngleRight as faCaretRight} from '@fortawesome/free-solid-svg-icons'
 // import { faReact} from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = () => {
 
-	const renderItem = (item) => {
+	const renderItem = (item, i) => {
 		return (
-			<li className="sidenav-item">
+			<li key={i} className="sidenav-item">
 				<button className="sidenav-button">
 					<FontAwesomeIcon className="sidenav-fa" icon={item.icon} />
 					<span>{item.name}</span>
