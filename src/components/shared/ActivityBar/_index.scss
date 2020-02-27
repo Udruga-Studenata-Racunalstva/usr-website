@@ -3,10 +3,10 @@
 .aside {
 	width: 50px;
 	background-color: $theme-bg-color-3;
+	flex-shrink: 0;
 
 	.aside-item--settings {
 		margin-top: auto;
-
 	}
 
 	.aside-button {
@@ -24,10 +24,31 @@
 			}
 		}
 
+		&:hover {
+			.aside-tooltip {
+				visibility: visible;
+				transition-delay: 1s;
+				opacity: 1;
+			}
+		}
+
 		.aside-fa {
 			color: $theme-link-color;
 			font-size: 1.8em;
 		}
+	}
+
+	.aside-tooltip {
+		position: absolute;
+		background-color: white;
+		color: #555;
+		border-radius: 1px;
+		font-size: 12px;
+		padding: 2px 4px;
+		margin: 0 7px;
+		visibility: hidden;
+		z-index: 1;
+		opacity: 0;
 	}
 }
 

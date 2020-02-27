@@ -1,7 +1,6 @@
 // Helpers and theme styles
 @use 'styles' as *;
 
-
 // Resets
 @use 'reset';
 
@@ -20,7 +19,6 @@
 @use 'pages/Projects';
 @use 'pages/News';
 @use 'pages/Page404';
-
 
 #root {
 	width: 100vw;
