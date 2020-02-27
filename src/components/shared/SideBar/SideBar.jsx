@@ -6,6 +6,25 @@ import { faAngleDown as faCaretDown, faAngleRight as faCaretRight} from '@fortaw
 // import { faReact} from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = () => {
+
+	const renderItem = (item) => {
+		return (
+			<li className="sidenav-item">
+				<button className="sidenav-button">
+					<FontAwesomeIcon className="sidenav-fa" icon={item.icon} />
+					<span>{item.name}</span>
+				</button>
+			</li>
+		)
+	}
+
+	const items = [
+		{icon: faCaretRight, name: "Home"},
+		{icon: faCaretRight, name: "News"},
+		{icon: faCaretRight, name: "Projects"},
+		{icon: faCaretRight, name: "Events"},
+	]
+
 	return (
 		<nav id="sidenav" className="sidenav flex-column">
 			<h2 className="sidenav-title">EXPLORER</h2>
@@ -13,30 +32,7 @@ const SideBar = () => {
 			<h2 className="sidenav-title sidenav-title--main">USR-WEBSITE</h2>
 
 			<ul className="sidenav-list">
-				<li className="sidenav-item">
-					<button className="sidenav-button">
-						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
-						<span>Home</span>
-					</button>
-				</li>
-				<li className="sidenav-item">
-					<button className="sidenav-button">
-						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
-						<span>News</span>
-					</button>
-				</li>
-				<li className="sidenav-item">
-					<button className="sidenav-button">
-						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
-						<span>Projects</span>
-					</button>
-				</li>
-				<li className="sidenav-item">
-					<button className="sidenav-button">
-						<FontAwesomeIcon className="sidenav-fa" icon={faCaretRight} />
-						<span>Events</span>
-					</button>
-				</li>
+				{items.map(renderItem)}
 			</ul>
 		</nav>
 	 );

@@ -6,24 +6,30 @@ import { faTimes as faExit} from '@fortawesome/free-solid-svg-icons'
 import { faReact} from '@fortawesome/free-brands-svg-icons'
 
 const EditorGroups = () => {
+
+	const renderItem = (item) => {
+		return (
+			<li className="nav-item">
+				<FontAwesomeIcon className="nav-fa nav-fa--react" icon={item.icon} />
+				<Link to={`/${item.name.toLowerCase()}`} className="nav-link">{item.name}.jsx</Link>
+				<button className="nav-button">
+					<FontAwesomeIcon className="nav-fa" icon={faExit} />
+				</button>
+			</li>
+		)
+	}
+
+	const items = [
+		{icon: faReact, name: "Home"},
+		{icon: faReact, name: "Events"},
+		{icon: faReact, name: "Projects"},
+	]
+
 	return (
 		<header>
 			<nav id="nav" className="nav flex-row">
 				<ul className="nav-list flex-row">
-					<li className="nav-item">
-						<FontAwesomeIcon className="nav-fa nav-fa--react" icon={faReact} />
-						<Link to="/home" className="nav-link">Home.jsx</Link>
-						<button className="nav-button">
-							<FontAwesomeIcon className="nav-fa" icon={faExit} />
-						</button>
-					</li>
-					<li className="nav-item">
-						<FontAwesomeIcon className="nav-fa nav-fa--react" icon={faReact} />
-						<Link to="/events" className="nav-link">Events.jsx</Link>
-						<button className="nav-button">
-							<FontAwesomeIcon className="nav-fa" icon={faExit} />
-						</button>
-					</li>
+					{items.map(renderItem)}
 				</ul>
 			</nav>
 		</header>
