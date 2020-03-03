@@ -6,7 +6,7 @@ import StatusBar from './shared/StatusBar'
 import EditorArea from './EditorArea'
 
 function App () {
-  return (
+	return (
 		<div className="flex-column">
 			<div className="flex-row flex-row--body">
 				{/* Sidebar */}
@@ -22,7 +22,7 @@ function App () {
 				<StatusBar />
 			</div>
 		</div>
-  )
+	)
 }
 
 export default App

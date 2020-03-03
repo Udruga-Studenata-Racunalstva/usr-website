@@ -1,2 +1,2 @@
-import WelcomeScreen from './WelcomeScreen';
-export default WelcomeScreen;
+import WelcomeScreen from './WelcomeScreen'
+export default WelcomeScreen

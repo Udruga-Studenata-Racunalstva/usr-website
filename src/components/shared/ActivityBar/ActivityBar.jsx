@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy as faExplorer} from '@fortawesome/free-regular-svg-icons'
@@ -8,8 +8,8 @@ const ActivityBar = () => {
 
 	const renderItem = (item, i) => {
 		return (
-			<li key={i} className={`aside-item` + (!!item.modifier ? ` aside-item--${item.modifier}` : "")}>
-				<button className={`aside-button ` + (!!item.modifier ? ` aside-button--${item.modifier}` : "")}>
+			<li key={i} className={'aside-item' + (item.modifier ? ` aside-item--${item.modifier}` : '')}>
+				<button className={'aside-button ' + (item.modifier ? ` aside-button--${item.modifier}` : '')}>
 					<FontAwesomeIcon className="aside-fa" icon={item.icon} />
 					<span className="aside-tooltip">{item.tooltip}</span>
 				</button>
@@ -18,12 +18,12 @@ const ActivityBar = () => {
 	}
 
 	const items = [
-		{icon: faExplorer, tooltip: "Explorer (Ctrl+Shift+E)"},
-		{icon: faSearch, tooltip: "Search (Ctrl+Shift+F)"},
-		{icon: faSourceControl, tooltip: "Source Control (Ctrl+Shift+G)"},
-		{icon: faDebug, tooltip: "Run and Debug (Ctrl+Shift+D)"},
-		{icon: faExtensions, tooltip: "Extensions (Ctrl+Shift+X)"},
-		{icon: faSettings, tooltip: "Extensions (Ctrl+Shift+X)", modifier: "settings"},
+		{icon: faExplorer, tooltip: 'Explorer (Ctrl+Shift+E)'},
+		{icon: faSearch, tooltip: 'Search (Ctrl+Shift+F)'},
+		{icon: faSourceControl, tooltip: 'Source Control (Ctrl+Shift+G)'},
+		{icon: faDebug, tooltip: 'Run and Debug (Ctrl+Shift+D)'},
+		{icon: faExtensions, tooltip: 'Extensions (Ctrl+Shift+X)'},
+		{icon: faSettings, tooltip: 'Extensions (Ctrl+Shift+X)', modifier: 'settings'},
 	]
 
 	return (
@@ -32,7 +32,7 @@ const ActivityBar = () => {
 				{items.map(renderItem)}
 			</ul>
 		</aside>
-	 );
+	)
 }
 
-export default ActivityBar;
+export default ActivityBar

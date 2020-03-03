@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,9 +20,9 @@ const EditorGroups = () => {
 	}
 
 	const items = [
-		{icon: faReact, name: "Home"},
-		{icon: faReact, name: "Events"},
-		{icon: faReact, name: "Projects"},
+		{icon: faReact, name: 'Home'},
+		{icon: faReact, name: 'Events'},
+		{icon: faReact, name: 'Projects'},
 	]
 
 	return (
@@ -33,7 +33,7 @@ const EditorGroups = () => {
 				</ul>
 			</nav>
 		</header>
-	 );
+	)
 }
 
-export default EditorGroups;
+export default EditorGroups

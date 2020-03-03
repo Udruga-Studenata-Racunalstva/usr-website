@@ -1,2 +1,2 @@
-import StatusBar from './StatusBar';
-export default StatusBar;
+import StatusBar from './StatusBar'
+export default StatusBar

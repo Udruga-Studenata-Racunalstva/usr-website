@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const News = () => {
 	return (
 		<main>
 			News Page
 		</main>
-	 );
+	 )
 }
 
-export default News;
+export default News

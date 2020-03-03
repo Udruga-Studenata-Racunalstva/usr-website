@@ -8,10 +8,10 @@ const EditorArea = () => {
 	return (
 		<div className="flex-column flex-column--content">
 			<EditorGroups />
-      <Pages />
+			<Pages />
 			<Panel />
 		</div>
-	 );
+	 )
 }
 
-export default EditorArea;
+export default EditorArea

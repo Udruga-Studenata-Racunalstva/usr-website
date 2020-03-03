@@ -1,6 +1,6 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes as faExit } from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes as faExit } from '@fortawesome/free-solid-svg-icons'
 
 const Panel = () => {
 
@@ -22,7 +22,7 @@ const Panel = () => {
 				<kbd className="panel-kbd"></kbd>
 			</div>
 		</div>
-	 );
+	)
 }
 
-export default Panel;
+export default Panel

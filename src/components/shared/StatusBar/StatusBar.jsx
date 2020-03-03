@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch as faSourceControl} from '@fortawesome/free-solid-svg-icons'
@@ -31,7 +31,7 @@ const StatusBar = () => {
 				</div>
 			</div>
 		</footer>
-	 );
+	 )
 }
 
-export default StatusBar;
+export default StatusBar

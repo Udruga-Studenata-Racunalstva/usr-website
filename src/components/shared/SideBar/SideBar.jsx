@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 // import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,10 +19,10 @@ const SideBar = () => {
 	}
 
 	const items = [
-		{icon: faCaretRight, name: "Home"},
-		{icon: faCaretRight, name: "News"},
-		{icon: faCaretRight, name: "Projects"},
-		{icon: faCaretRight, name: "Events"},
+		{icon: faCaretRight, name: 'Home'},
+		{icon: faCaretRight, name: 'News'},
+		{icon: faCaretRight, name: 'Projects'},
+		{icon: faCaretRight, name: 'Events'},
 	]
 
 	return (
@@ -35,7 +35,7 @@ const SideBar = () => {
 				{items.map(renderItem)}
 			</ul>
 		</nav>
-	 );
+	)
 }
 
-export default SideBar;
+export default SideBar
